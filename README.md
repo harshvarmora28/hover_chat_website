@@ -1,5 +1,5 @@
 
-# Project Title
+# Hover Chat Realtime (Whatsapp Clone)
 
 👉 https://hover-chat-by-harshcreations.netlify.app/
 
