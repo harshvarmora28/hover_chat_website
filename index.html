@@ -1,0 +1,47 @@
+<!-- Author: Harsh Varmora -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Hover-Chat_Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/5acf7db306.js" crossorigin="anonymous"></script>
+    <script defer src="https://hoverchatnodeserver.herokuapp.com/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <title>Hover Chat - Realtime Chat</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="logo"><img src="img/Hover-Chat_Logo.png" alt=""></div>
+        <div id="navbar-left">All Chats</div>
+        <div id="navbar-right"><img src="img/Group_Logo_2.png" alt="">Beta Testing - Group 1 📌</div>
+        <div id="aside">
+            <div id="allchats-container">
+                <img id="prof-pic" src="img/Group_Logo_2.png" alt="">Beta Testing - Group 1 📌
+            </div>
+            <div id="allchats-container">
+                <img id="prof-pic" src="img/HC_Logo.png" alt="">Harsh Varmora <img id="bluetick" src="img/bluetick.png"
+                    alt=""><div id="coming-soon">(Coming Soon!)</div>
+            </div>
+        </div>
+        <div id="section">
+            <div class="message-container">
+                <!-- <div class="message left">Welcome to Hover-Chat Realtime Chatting!</div>
+                <div class="message right"><i id="check-icon" class="fas fa-check fa-xs"></i></div>                 -->
+            </div>
+            <form action="#" id="send-container">
+                <i id="send-emoji" class="far fa-grin-beam"></i>
+                <i id="send-emoji" class="fas fa-image"></i>
+                <input type="text" id="message_input" placeholder="Type a message">
+                <button id="send-btn" type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

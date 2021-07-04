@@ -1,0 +1,251 @@
+/* Author: Harsh Varmora */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: #091921;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "logo logo logo logo logo logo"
+    "navbar-left navbar-right navbar-right navbar-right navbar-right navbar-right"
+    "aside section section section section section";
+}
+#logo{
+    grid-area: logo;
+    padding-top: 5px;
+    color: white;
+    margin: auto;
+}
+#logo img{
+    width: 200px;
+}
+#navbar-left{
+    grid-area: navbar-left;
+    color: rgb(245, 245, 245);
+    padding: 6px 0px;
+    background-color: #18323e;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+#navbar-right{
+    grid-area: navbar-right;
+    color: rgb(245, 245, 245);
+    padding: 6px 0px;
+    background-color: #18323e;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 4px;
+}
+#navbar-right img{
+    width: 50px;
+    margin-right: 12px;
+    margin-left: 30px;
+    border-radius: 50%;
+    box-shadow: 
+    /* logo shadow */
+    0px 0px 2px #03090c,
+    /* offset */
+    0px 0px 0px 2px #1d4050,
+    /* bottom right */
+    5px 5px 15px #03090c,
+    /* top left  */
+    -5px -5px 15px #222d32;
+}
+#section{
+    grid-area: section;
+    /* border: 2px solid yellow; */
+    color: white;
+    background-color: #0d222c;
+    border-radius: 10px;
+
+}
+#aside{
+    grid-area: aside;
+    /* border: 2px solid yellow; */
+    color: white;
+    background-color: #0d222c;
+    margin-right: 4px;
+    border-radius: 10px;
+
+}
+.message-container{
+    height: 66vh;
+    position: relative;
+    overflow-y: auto;
+}
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #2f4b58;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #365563;
+}
+#allchats-container{
+    border-bottom: 1px solid rgb(117, 117, 117);
+    display: flex;
+    align-items: center;
+    padding: 6px 0px;
+    cursor: pointer;
+    position: relative;
+}
+#allchats-container:hover{
+    background-color: #0d2029;
+}
+#bluetick{
+    width: 18px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+#coming-soon{
+    color: rgb(143 143 143);
+    position: absolute;
+    right: 10px;
+}
+#prof-pic{
+    width: 50px;
+    margin-right: 12px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.message{
+    background-color: #2b3f49;
+    margin: 10px 3px;
+    padding: 10px 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-shadow: 2px 2px 8px #03090b;
+}
+.left{
+    float: left;
+    clear: both;
+    border-radius: 26px 26px 26px 0px;
+    margin-left: 12px;
+    max-width: 65%;
+}
+.right{
+    float: right;
+    clear: both;
+    border-radius: 26px 26px 0px 26px;
+    margin-right: 12px;
+    display: block;
+    max-width: 65%;
+    position: relative;
+    /* padding-right: 25px; */
+}
+#send-container{
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0px;
+    width: 99.5%;
+    padding: 12px 0px;
+    background-color: #18323e;
+    position: sticky;
+
+    
+}
+#send-container input{
+    border: none;
+    outline: none;
+    padding: 8px 3px;
+    background: #0d222c;
+    width: 80%;
+    color: white;
+    /* border: 1px solid rgb(146, 146, 146); */
+    border-radius: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: inset 3px 3px 5px #030c11, 
+                inset -3px -3px 5px #1a2b33;
+}
+.fa-check{
+    color: rgb(138, 138, 138);
+    position: absolute;
+    right: 6px;
+    bottom: 6px;
+}
+#check-icon{
+    font-size: 9px;
+}
+.fa-image{
+    color: rgb(143, 143, 143);
+    cursor: pointer;
+}
+.fa-grin-beam{
+    color: rgb(143, 143, 143);
+    cursor: pointer;
+}
+#send-emoji{
+    font-size: 20px;
+    margin-left: 10px;
+}
+#send-btn{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+
+}
+.fa-paper-plane{
+    color: rgb(143, 143, 143);
+    cursor: pointer;
+}
+@media only screen and (max-width: 1100px) and (min-width: 500px){
+    #aside{
+        display: none;
+    }
+    .container{
+        display: block;
+    }
+    #logo img{
+        width: 180px;
+        display: block;
+        margin: 0px auto;
+    }
+    #navbar-left{
+        display: none;
+    }
+    #send-container input{
+        width: 70%;
+    }
+
+}
+@media only screen and (max-width: 500px){
+    #aside{
+        display: none;
+    }
+    .container{
+        display: block;
+    }
+    #logo img{
+        width: 130px;
+        display: block;
+        margin: 0px auto;
+    }
+    #navbar-left{
+        display: none;
+    }
+    #send-container input{
+        width: 60%;
+    }
+}
